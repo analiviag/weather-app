@@ -1,0 +1,75 @@
+.city {
+  color: #475053;
+  font-family: Poppins;
+  font-weight: thin;
+  margin-top: 30px;
+}
+
+.main {
+  font-size: 70px;
+}
+
+.main-temperature {
+  margin-top: 0px;
+  font-family: Poppins;
+  font-weight: thin;
+  color: #475053;
+  font-size: 50px;
+}
+
+.weekly-iconsm {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.weekly-iconst {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.weekly-iconsw {
+  display: block;
+  margin: 10px 25px;
+  font-size: 30px;
+}
+
+.weekly-iconsth {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.weekly-iconsf {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.weekly-iconssat {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.weekly-iconssun {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+}
+.all-temp {
+  margin-top: 30px;
+  font-family: Poppins;
+  font-weight: thin;
+  color: #475053;
+}
+
+.new1 {
+  border-top: 1px solid #9ba6a5;
+  margin: 30px 0 0;
+}
+
+.card-img {
+  width: auto;
+}
