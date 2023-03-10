@@ -1,3 +1,10 @@
+.weather-app {
+  max-width: 600px;
+  margin: 30px 0 auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+}
+
 .city {
   color: #475053;
   font-family: Poppins;

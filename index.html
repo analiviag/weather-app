@@ -22,93 +22,95 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-form" class="mb-3">
-        <label for="formGroupExampleInput" class="form-label"></label>
-        <input
-          type="text"
-          class="form-control"
-          id="formGroupExampleInput"
-          placeholder="Search for a city"
-        />
-      </form>
+      <div class="weather-app-wrapper">
+        <form id="search-form" class="mb-3">
+          <label for="formGroupExampleInput" class="form-label"></label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Search for a city"
+          />
+        </form>
 
-      <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-primary">Search</button>
 
-      <br />
-      <div class="row city">
-        <div class="col-6">
-          <h1 id="current-city">Vancouver, BC</h1>
-          <h3 id="date-time">Sunday, Jan 15 11:16</h3>
-          <h3>Rain</h3>
-        </div>
+        <br />
+        <div class="row city">
+          <div class="col-6">
+            <h1 id="current-city">Vancouver, BC</h1>
+            <h3 id="date-time">Sunday, Jan 15 11:16</h3>
+            <h3>Rain</h3>
+          </div>
 
-        <div class="col-6">
-          <div class="row">
-            <div class="main">🌧</div>
-            <div class="d-flex flex-column">
-              <div class="main-temperature">8°C</div>
-              <small>Preciptation: 97%</small>
-              <small>Humidity: 91%</small>
-              <small>Wind: 0km/h</small>
+          <div class="col-6">
+            <div class="row">
+              <div class="main">🌧</div>
+              <div class="d-flex flex-column">
+                <div class="main-temperature">8°C</div>
+                <small>Preciptation: 97%</small>
+                <small>Humidity: 91%</small>
+                <small>Wind: 0km/h</small>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <hr class="new1" />
-      <br />
-      <div class="all-temp">
-        <div class="row">
-          <div class="col">
-            <div>Monday</div>
-            <div class="weekly-iconsm">🌧</div>
-            <div>8°C - 6°C</div>
-          </div>
-          <br />
-          <div class="col">
-            <div>Tuesday</div>
-            <div class="weekly-iconst">🌧</div>
-            <div>7°C - 5°C</div>
-          </div>
-          <br />
-          <div class="col">
-            <div>Wednesday</div>
-            <div class="weekly-iconsw">🌧</div>
-            <div>8°C - 3°C</div>
-          </div>
-          <br />
-          <div class="col">
-            <div>Thursday</div>
-            <div class="weekly-iconsth">🌤</div>
-            <div>7°C - 3°C</div>
-          </div>
-          <br />
-          <div class="col">
-            <div>Friday</div>
-            <div class="weekly-iconsf">🌧</div>
-            <div>7°C - 3°C</div>
-          </div>
-          <br />
-          <div class="col">
-            <div>Saturday</div>
-            <div class="weekly-iconssat">🌧</div>
-            <div>8°C - 4°C</div>
-          </div>
-          <br />
-          <div class="col">
-            <div>Sunday</div>
-            <div class="weekly-iconssun">🌧</div>
-            <div>8°C - 3°C</div>
-          </div>
-        </div>
+        <hr class="new1" />
         <br />
+        <div class="all-temp">
+          <div class="row">
+            <div class="col">
+              <div>Monday</div>
+              <div class="weekly-iconsm">🌧</div>
+              <div>8°C - 6°C</div>
+            </div>
+            <br />
+            <div class="col">
+              <div>Tuesday</div>
+              <div class="weekly-iconst">🌧</div>
+              <div>7°C - 5°C</div>
+            </div>
+            <br />
+            <div class="col">
+              <div>Wednesday</div>
+              <div class="weekly-iconsw">🌧</div>
+              <div>8°C - 3°C</div>
+            </div>
+            <br />
+            <div class="col">
+              <div>Thursday</div>
+              <div class="weekly-iconsth">🌤</div>
+              <div>7°C - 3°C</div>
+            </div>
+            <br />
+            <div class="col">
+              <div>Friday</div>
+              <div class="weekly-iconsf">🌧</div>
+              <div>7°C - 3°C</div>
+            </div>
+            <br />
+            <div class="col">
+              <div>Saturday</div>
+              <div class="weekly-iconssat">🌧</div>
+              <div>8°C - 4°C</div>
+            </div>
+            <br />
+            <div class="col">
+              <div>Sunday</div>
+              <div class="weekly-iconssun">🌧</div>
+              <div>8°C - 3°C</div>
+            </div>
+          </div>
+          <br />
+        </div>
+        <small>
+          <a href="https://github.com/analiviag/weather-app" target="_blank"
+            >Open-source code</a
+          >
+          by Analivia Costa
+        </small>
       </div>
-      <small>
-        <a href="https://github.com/analiviag/weather-app" target="_blank"
-          >Open-source code</a
-        >
-        by Analivia Costa
-      </small>
     </div>
     <script src="src/script.js"></script>
   </body>
