@@ -12,35 +12,44 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="weather-app-wrapper">
+      <div class="weather-app">
         <form id="search-form" class="mb-3">
-          <label for="formGroupExampleInput" class="form-label"></label>
-          <input
-            type="text"
-            class="form-control"
-            id="formGroupExampleInput"
-            placeholder="Search for a city"
-          />
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Search for a city"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                value="Search"
+                type="submit"
+                class="btn btn-primary w-100"
+              />
+            </div>
+          </div>
         </form>
-
-        <button type="button" class="btn btn-primary">Search</button>
-
         <br />
-        <div class="row city">
+        <div class="row-city">
           <div class="col-6">
             <h1 id="current-city">Vancouver, BC</h1>
-            <h3 id="date-time">Sunday, Jan 15 11:16</h3>
-            <h3>Rain</h3>
+            <p id="date-time">Sunday, Jan 15 11:16</p>
+            <p id="current-condition">Rain</p>
           </div>
 
           <div class="col-6">

@@ -1,13 +1,8 @@
-.weather-app {
-  max-width: 600px;
-  margin: 30px 0 auto;
-  padding: 20px;
-  border: 1px solid #dadde1;
+.body {
+  font-family: Poppins;
 }
 
 .city {
-  color: #475053;
-  font-family: Poppins;
   font-weight: thin;
   margin-top: 30px;
 }
@@ -18,12 +13,24 @@
 
 .main-temperature {
   margin-top: 0px;
-  font-family: Poppins;
+
   font-weight: thin;
-  color: #475053;
   font-size: 50px;
 }
 
+#current-city {
+  margin: 1px 0 1px 0;
+  color: #878787;
+}
+
+#date-time {
+  margin: 1px 10px 0 0;
+  color: #878787;
+}
+
+#current-condition {
+  color: #878787;
+}
 .weekly-iconsm {
   display: block;
   margin: 10px;
@@ -67,16 +74,19 @@
 }
 .all-temp {
   margin-top: 30px;
-  font-family: Poppins;
+
   font-weight: thin;
-  color: #475053;
 }
 
 .new1 {
-  border-top: 1px solid #9ba6a5;
+  border-top: 1px solid;
   margin: 30px 0 0;
 }
 
-.card-img {
-  width: auto;
+.weather-app {
+  max-width: 800px;
+  margin: 20px 0 auto;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
