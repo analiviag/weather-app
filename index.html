@@ -24,102 +24,114 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form id="search-form" class="mb-3">
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                class="form-control"
-                id="formGroupExampleInput"
-                placeholder="Search for a city"
-                autocomplete="off"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                value="Search"
-                type="submit"
-                class="btn btn-primary w-100"
-              />
-            </div>
-          </div>
-        </form>
-        <br />
-        <div class="row-city">
-          <div class="col-6">
-            <h1 id="current-city">Vancouver, BC</h1>
-            <p id="date-time">Sunday, Jan 15 11:16</p>
-            <p id="current-condition">Rain</p>
-          </div>
-
-          <div class="col-6">
+        <div class="weather-app-wrapper">
+          <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="main">🌧</div>
-              <div class="d-flex flex-column">
-                <div class="main-temperature">8°C</div>
-                <small>Preciptation: 97%</small>
-                <small>Humidity: 91%</small>
-                <small>Wind: 0km/h</small>
+              <div class="col-9">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Search for a city"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  value="Search"
+                  type="submit"
+                  class="btn btn-primary w-100"
+                />
               </div>
             </div>
-          </div>
-        </div>
-
-        <hr class="new1" />
-        <br />
-        <div class="all-temp">
-          <div class="row">
-            <div class="col">
-              <div>Monday</div>
-              <div class="weekly-iconsm">🌧</div>
-              <div>8°C - 6°C</div>
-            </div>
-            <br />
-            <div class="col">
-              <div>Tuesday</div>
-              <div class="weekly-iconst">🌧</div>
-              <div>7°C - 5°C</div>
-            </div>
-            <br />
-            <div class="col">
-              <div>Wednesday</div>
-              <div class="weekly-iconsw">🌧</div>
-              <div>8°C - 3°C</div>
-            </div>
-            <br />
-            <div class="col">
-              <div>Thursday</div>
-              <div class="weekly-iconsth">🌤</div>
-              <div>7°C - 3°C</div>
-            </div>
-            <br />
-            <div class="col">
-              <div>Friday</div>
-              <div class="weekly-iconsf">🌧</div>
-              <div>7°C - 3°C</div>
-            </div>
-            <br />
-            <div class="col">
-              <div>Saturday</div>
-              <div class="weekly-iconssat">🌧</div>
-              <div>8°C - 4°C</div>
-            </div>
-            <br />
-            <div class="col">
-              <div>Sunday</div>
-              <div class="weekly-iconssun">🌧</div>
-              <div>8°C - 3°C</div>
-            </div>
-          </div>
+          </form>
           <br />
+          <div class="overview">
+            <h1 id="current-city"></h1>
+            <ul>
+              <li>Last update: <span id="date-time"></span></li>
+              <li id="current-condition"></li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img src="" alt="Clear" id="icon" />
+                <div>
+                  <strong id="temperature"></strong
+                  ><span class="units">
+                    <a href="#" id="celsius-link" class="active"> °C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+
+          <hr class="new1" />
+          <br />
+          <div class="all-temp">
+            <div class="row">
+              <div class="col">
+                <div>Monday</div>
+                <div class="weekly-iconsm">🌧</div>
+                <div>8°C - 6°C</div>
+              </div>
+              <br />
+              <div class="col">
+                <div>Tuesday</div>
+                <div class="weekly-iconst">🌧</div>
+                <div>7°C - 5°C</div>
+              </div>
+              <br />
+              <div class="col">
+                <div>Wednesday</div>
+                <div class="weekly-iconsw">🌧</div>
+                <div>8°C - 3°C</div>
+              </div>
+              <br />
+              <div class="col">
+                <div>Thursday</div>
+                <div class="weekly-iconsth">🌤</div>
+                <div>7°C - 3°C</div>
+              </div>
+              <br />
+              <div class="col">
+                <div>Friday</div>
+                <div class="weekly-iconsf">🌧</div>
+                <div>7°C - 3°C</div>
+              </div>
+              <br />
+              <div class="col">
+                <div>Saturday</div>
+                <div class="weekly-iconssat">🌧</div>
+                <div>8°C - 4°C</div>
+              </div>
+              <br />
+              <div class="col">
+                <div>Sunday</div>
+                <div class="weekly-iconssun">🌧</div>
+                <div>8°C - 3°C</div>
+              </div>
+            </div>
+            <br />
+          </div>
         </div>
-        <small>
-          <a href="https://github.com/analiviag/weather-app" target="_blank"
-            >Open-source code</a
-          >
-          by Analivia Costa
-        </small>
       </div>
+      <small>
+        <a href="https://github.com/analiviag/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Analivia Costa
+      </small>
     </div>
     <script src="src/script.js"></script>
   </body>
