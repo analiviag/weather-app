@@ -3,11 +3,11 @@ function formatDate(timestamp) {
 
   let hour = now.getHours();
   if (hour < 10) {
-    hour = `0{hour}`;
+    hour = `0${hour}`;
   }
   let minute = now.getMinutes();
   if (minute < 10) {
-    minute = `0{minute}`;
+    minute = `0${minute}`;
   }
   let days = [
     "Sunday",
@@ -19,9 +19,7 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let day = days[now.getDay()];
-
-  let dateTime = document.querySelector("#date-time");
-  dateTime.innerHTML = `${day}, ${hour}:${minute}`;
+  return `${day}, ${hour}:${minute}`;
 }
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -83,7 +81,7 @@ form.addEventListener("submit", handleSubmit);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
-let celsiusLink = document.querySelector("celsius-link");
+let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Vancouver");

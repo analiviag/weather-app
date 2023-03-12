@@ -48,7 +48,7 @@
   font-weight: thin;
 }
 
-.new1 {
+.line {
   border-top: 1px solid;
   margin: 30px 0 0;
 }
@@ -101,9 +101,9 @@ li:first-letter {
 }
 
 .weather-temperature img {
-  margin-right: 5px;
-  height: 44px;
-  width: 64px;
+  margin: -10px 0 5px 0;
+  height: 90px;
+  width: 90px;
 }
 
 .weather-temperature strong {
@@ -129,7 +129,7 @@ li:first-letter {
 }
 
 .weather-forecast {
-  margin-top: 20px;
+  margin-top: 20px 0 0 -10px;
   text-align: center;
   color: #878787;
 }
