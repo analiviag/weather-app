@@ -92,7 +92,7 @@ li:first-letter {
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
+  color: #878787;
   cursor: default;
 }
 
@@ -107,7 +107,7 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: #878787;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -120,7 +120,7 @@ li:first-letter {
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
+  color: #878787;
   cursor: default;
 }
 
@@ -131,7 +131,7 @@ li:first-letter {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: #878787;
 }
 
 .weather-forecast-date {
@@ -145,4 +145,14 @@ li:first-letter {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+#current-city {
+  color: #878787;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+#date-time {
+  margin: 0;
 }
