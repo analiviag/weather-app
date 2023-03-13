@@ -2,57 +2,6 @@
   font-family: Poppins;
 }
 
-.weekly-iconsm {
-  display: block;
-  margin: 10px;
-  font-size: 30px;
-}
-
-.weekly-iconst {
-  display: block;
-  margin: 10px;
-  font-size: 30px;
-}
-
-.weekly-iconsw {
-  display: block;
-  margin: 10px 25px;
-  font-size: 30px;
-}
-
-.weekly-iconsth {
-  display: block;
-  margin: 10px;
-  font-size: 30px;
-}
-
-.weekly-iconsf {
-  display: block;
-  margin: 10px;
-  font-size: 30px;
-}
-
-.weekly-iconssat {
-  display: block;
-  margin: 10px;
-  font-size: 30px;
-}
-
-.weekly-iconssun {
-  display: block;
-  margin: 10px;
-  font-size: 30px;
-}
-.all-temp {
-  margin-top: 30px;
-  font-weight: thin;
-}
-
-.line {
-  border-top: 1px solid;
-  margin: 30px 0 0;
-}
-
 .weather-app {
   max-width: 800px;
   margin: 20px 0 auto;
@@ -129,18 +78,18 @@ li:first-letter {
 }
 
 .weather-forecast {
-  margin-top: 20px 0 0 -10px;
+  margin-top: 50px 0 0 -10px;
   text-align: center;
   color: #878787;
+  font-weight: 200;
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .weather-forecast-temperatures {
