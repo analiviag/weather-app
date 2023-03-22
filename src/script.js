@@ -21,6 +21,14 @@ function formatDate(timestamp) {
   let day = days[now.getDay()];
   return `${day}, ${hour}:${minute}`;
 }
+
+function getForecast(coordinates) {
+  let apiKey = "8d9838178b5b401f1b4e7cb5af18e210";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#current-city");
@@ -43,9 +51,12 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let otherDays = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
@@ -115,4 +126,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Vancouver");
-displayForecast();
